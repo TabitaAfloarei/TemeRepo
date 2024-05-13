@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.window{
+    width: 70vh;
+    height: 70vh;
+    background-color: bisque;
+    display: flex;
+}
+
+.title{
+    padding: 10px 0px 5px 0;
+}
+
+.left-container{
+    width: 10%;
+    height: 100%;
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger-menu{
+    width: 20px;
+    height: 20px;
+    background-image: url(./hamburger.png);
+    background-repeat: no-repeat;
+}
+
+.middle-container{
+    width: 30%;
+    height: 100%;
+    background-color: lightcyan;
+}
+
+.right-container{
+    width: 60%;
+    height: 100%;
+    background-color: lightgray;
+}
