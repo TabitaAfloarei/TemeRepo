@@ -1,0 +1,22 @@
+.numbers{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3px;
+    padding: 10px;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.button{
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+.back-arrow{
+    background-image: url(./left-arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
