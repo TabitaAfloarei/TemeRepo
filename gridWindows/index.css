@@ -1,4 +1,5 @@
 *{
+    font-family: Helvetica;
     margin: 0;
     padding: 0;
 }
@@ -9,14 +10,20 @@
     display: flex;
 }
 
-.title{
+.left-container,
+.middle-container,
+.right-container{
+    background-color: rgb(150, 150, 150);
+}
+
+.section-title.up{
     padding: 10px 0px 5px 0;
+    font-weight: lighter;
 }
 
 .left-container{
     width: 10%;
     height: 100%;
-    background-color: lightgoldenrodyellow;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -26,18 +33,135 @@
 .hamburger-menu{
     width: 20px;
     height: 20px;
-    background-image: url(./hamburger.png);
+    background-image: url(./windowsassets/hamburger.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bottom-elements{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.folder{
+    width: 50px;
+    height: 50px;
+    background-image: url(./windowsassets/file.png);
     background-repeat: no-repeat;
 }
 
+
+/*MIDDLE */
 .middle-container{
     width: 30%;
     height: 100%;
-    background-color: lightcyan;
 }
 
+.section-image{
+    width: 30px;
+    height: 30px;
+    background-image: url(./windowsassets/prompt.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-image.cube{
+    width: 30px;
+    height: 30px;
+    background-image: url(./windowsassets/cube.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-image.folder{
+    width: 30px;
+    height: 30px;
+    background-image: url(./windowsassets/folder.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-image.calculator{
+    width: 30px;
+    height: 30px;
+    background-image: url(./windowsassets/calculator.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-image.camera{
+    width: 30px;
+    height: 30px;
+    background-image: url(./windowsassets/camera.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section-image.file{
+    width: 30px;
+    height: 30px;
+    background-image: url(./windowsassets/file.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.section-duo{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.section-text{
+    font-size: x-small;
+}
+
+
+/*RiGHT */
 .right-container{
     width: 60%;
     height: 100%;
-    background-color: lightgray;
+}
+
+.right-section{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.grid-section.productivity,
+.grid-section.explore{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px;
+    width: 100%;
+    height: 85%;
+}
+
+.grid-elem{
+    padding: 10px;
+    box-sizing: border-box;
+    background-image: url(./windowsassets/blue.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-section.bottom{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px;
+    width: 100%;
+    height: 80%;
 }
