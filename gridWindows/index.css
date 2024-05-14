@@ -4,8 +4,8 @@
     padding: 0;
 }
 .window{
-    width: 70vh;
-    height: 70vh;
+    width: 700px;
+    height: 700px;
     background-color: bisque;
     display: flex;
 }
@@ -31,8 +31,8 @@
 }
 
 .hamburger-menu{
-    width: 20px;
-    height: 20px;
+    width: 30%;
+    height: 30%;
     background-image: url(./windowsassets/hamburger.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -41,13 +41,21 @@
 .bottom-elements{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
+    padding-bottom: 15px;
 }
 
 .folder{
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     background-image: url(./windowsassets/file.png);
+    background-repeat: no-repeat;
+}
+
+.folder.off{
+    width: 30px;
+    height: 30px;
+    background-image: url(./windowsassets/off.png);
     background-repeat: no-repeat;
 }
 
@@ -56,6 +64,9 @@
 .middle-container{
     width: 30%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .section-image{
@@ -108,7 +119,7 @@
 .section{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
 }
 
 .section-duo{
