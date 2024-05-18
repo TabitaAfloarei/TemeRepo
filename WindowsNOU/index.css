@@ -192,7 +192,7 @@ body {
 .right-container {
     display: grid;
     grid-template-columns: repeat(3, 2fr);
-    grid-template-rows: 1fr repeat(2, 2fr) 1fr repeat(2, 2fr) 1fr 2fr;
+    grid-template-rows: 0.5fr repeat(2, 2fr) 0.5fr repeat(2, 2fr) 0.5fr 2fr;
     gap: 5px;
     padding: 10px;
 }
@@ -226,9 +226,9 @@ body {
 }
 
 .right-image.news {
-    background-image: url(./wassets/excel.png);
+    background-image: url(./wassets/bbc.png);
     background-repeat: no-repeat;
-    background-size: 50%;
+    background-size: 100%;
     background-position: center;
 }
 
@@ -242,7 +242,7 @@ body {
 .right-image.netflix {
     background-image: url(./wassets/netflix.png);
     background-repeat: no-repeat;
-    background-size: 75%;
+    background-size: 100%;
     background-position: center;
 }
 
@@ -254,9 +254,9 @@ body {
 }
 
 .right-image.store {
-    background-image: url(./wassets/store.png);
+    background-image: url(./wassets/play-store.png);
     background-repeat: no-repeat;
-    background-size: 50%;
+    background-size: 100%;
     background-position: center;
 }
 
