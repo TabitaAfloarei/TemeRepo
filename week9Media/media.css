@@ -79,3 +79,11 @@ html {
         order: 1;
     }
 }
+
+@media print {
+    * {
+        background-color: white !important;
+        /*altfel culorile din container tot raman */
+        color: black;
+    }
+}
