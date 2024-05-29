@@ -1,0 +1,35 @@
+*,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+}
+
+.yellow {
+    background-color: yellow;
+    position: fixed;
+    /* pentru a pozitiona patratul relativ la toata pagina */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*mijlocul patratului galben in mijlocul paginii */
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue,
+.green {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
