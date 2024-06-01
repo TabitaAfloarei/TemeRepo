@@ -9,6 +9,10 @@ initialValues.push(...otherValues);
 console.log("Initial values array(modified):\n", initialValues);
 
 //pct 3
+console.log("Diferenta este", initialValues[2] - 7);
+let sum = initialValues[4][1] + initialValues[7];
+console.log("Suma este:", sum);
+console.log("Restul impartirii este", initialValues[1] % 10);
 //pct 4
 //pct 5
 //pct 6
