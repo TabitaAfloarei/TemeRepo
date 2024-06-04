@@ -1,0 +1,265 @@
+* {
+    font-family: Helvetica;
+}
+
+.main-container {
+    width: 400px;
+    height: 700px;
+    border: 2px solid gray;
+    background-color: rgb(230, 230, 230);
+}
+
+.upper-bar,
+.options-bar,
+.display-panel,
+.deg-fe-container,
+.m-line,
+.numbers,
+.advanced-options {
+    background-color: rgb(230, 230, 230);
+    padding: 8px 10px;
+    box-sizing: border-box;
+}
+
+.upper-bar {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.bar-icons {
+    display: flex;
+    gap: 30px;
+}
+
+.title {
+    color: gray;
+}
+
+.close {
+    width: 20px;
+    height: 20px;
+    background-image: url(./close-window.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.square {
+    width: 20px;
+    height: 20px;
+    background-image: url(./square.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.minimize {
+    width: 20px;
+    height: 20px;
+    background-image: url(./minimize.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.options-bar {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.hamburger-menu {
+    width: 20px;
+    height: 20px;
+    background-image: url(./hamburger.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.move-on-top {
+    width: 20px;
+    height: 20px;
+    background-image: url(./top.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.history {
+    width: 20px;
+    height: 20px;
+    background-image: url(./clock.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.scientific-option {
+    font-family: Helvetica;
+    font-size: large;
+}
+
+.display-panel {
+    font-family: Helvetica;
+    text-align: right;
+    font-size: 300%;
+    font-family: Helvetica;
+
+}
+
+.deg-fe-container {
+    display: flex;
+    gap: 30px;
+    font-weight: bold;
+}
+
+.m-line {
+    display: flex;
+    justify-content: space-around;
+    font-weight: bolder;
+    align-items: baseline;
+}
+
+.ms {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.fade {
+    color: gray;
+}
+
+.advanced-options {
+    display: flex;
+    gap: 20px;
+}
+
+.trigonometry {
+    display: flex;
+}
+
+.trigonometry.triangle {
+    width: 20px;
+    height: 20px;
+    background-image: url(./triangle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.trigonometry.arrow {
+    width: 20px;
+    height: 20px;
+    background-image: url(./down-arrow.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.function {
+    display: flex;
+}
+
+.function.sign {
+    width: 20px;
+    height: 20px;
+    background-image: url(./calculus1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.function.arrow {
+    width: 20px;
+    height: 20px;
+    background-image: url(./down-arrow.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.board {
+    width: 100%;
+    height: 60%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.pi {
+    width: 20px;
+    height: 20px;
+    background-image: url(./pi.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 20%;
+    background-position: center;
+}
+
+.delete {
+    background-image: url(./delete.png);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: center;
+}
+
+.number {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    font-weight: bolder;
+}
+
+
+.symbol {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(243, 243, 243);
+}
+
+.number,
+.symbol,
+.equal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number:hover {
+    background-color: whitesmoke;
+}
+
+.symbol:hover {
+    opacity: 0.5;
+}
+
+.equal:hover {
+    background-color: rgb(99, 127, 172);
+    opacity: 1;
+}
+
+.equal {
+    background-color: rgb(113, 144, 195);
+}
+
+.ms:not(.fade):hover {
+    font-weight: lighter;
+}
+
+.trigonometry.arrow:hover,
+.function.arrow:hover {
+    background-size: 120%;
+}
+
+.trigonometry.text:hover,
+.function.text:hover {
+    font-weight: bold;
+}
