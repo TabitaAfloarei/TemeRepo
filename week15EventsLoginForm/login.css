@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    color: white;
+    color: rgba(255, 255, 255, 0.9);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -9,31 +9,39 @@ body{
     display: flex;
 }
 
-.image-container{
-    width: 50%;
+.login-container{
+    width: 100%;
     height: 100vh;
 
-    background-image: url(./login2.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url(./imageBackground.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-.login-container{
-    width: 50%;
-    height: 100vh;
 
-    background-image: url(./login.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-
+.form-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 50px;
+
+    background-color: rgba(81, 81, 81, 0.3);
+
+    border-radius: 10px;
+    padding: 100px;
+    max-width: 300px;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    text-align: center;
+    
 }
 
 .inputs-group{
@@ -41,12 +49,10 @@ body{
     flex-direction: column;
 }
 
-#form-title{
-    color: white;
-}
 
 label{
     display: block;
+    text-align: start;
 
     padding: 5px 60px 5px 0px;
     /* margin-top: 20px; */
@@ -59,24 +65,39 @@ label{
     /* display: none; */
 
     padding: 3px;
+    text-align: start;
 
 }
 
 input{
     border: 0;
     padding: 10px 60px 10px 5px;
+    border-radius: 5px;
     font-size: 90%;
-    color: #3c4245;
+
+
+    background-color: rgba(255, 255, 255, 0.2); 
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; 
 }
 
+
 .sign-in-btn{
-    background-color: #719192;
+    background-color: #343434;
     padding: 10px;
     margin-top: 10px;
+    border-radius: 5px;
+
+    font-size: 16px;
+    cursor: pointer;
+    
+    transition: background-color 0.3s ease;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .signup-link{
-    color: #3c4245;
     padding: 10px 15px;
     margin-top: 10px;
 }
