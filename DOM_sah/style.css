@@ -1,0 +1,50 @@
+
+.tabla{
+    display: grid;
+    grid-template-columns: repeat(8, 70px);
+    grid-template-rows: repeat(8, 70px);
+    gap: 0px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.celula{
+    width: 70px;
+    height: 70px;
+}
+
+.inchis{
+    background-color: #769656;
+}
+
+.deschis{
+    background-color: #eeeed2;
+}
+
+
+.open-btn {
+
+    background-color: #baca44; 
+    border: none; 
+    color: white; 
+    padding: 15px 40px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    border-radius: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.open-btn:hover {
+    background-color: #aab43c;
+}
