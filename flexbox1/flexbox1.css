@@ -1,0 +1,84 @@
+
+*{
+    font-family: "Arial";
+}
+
+
+.big-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtitle{
+    font-weight: lighter;
+    color: gray;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.container{
+    width: fit-content;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.product{
+    width: 200px;
+    height: 300px;
+    border: 1px solid rgb(218, 215, 215);
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+
+div img{
+    width: 100%;
+    height: 130px; 
+    
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+button{
+    background-color: white;
+    border: 1px solid rgb(194, 194, 194);
+    font-weight: bold;
+    font-size: small;
+    color: darkgray;
+    padding: 10px 30px;
+}
+
+
+.prod-title{
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-top: 40px;
+}
+
+p{
+    font-size: smaller;
+    color: rgb(84, 84, 84);
+    margin-top: 5px;
+}
+.title{
+    margin-bottom: 0px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+/*.section{
+    width: 500px;
+    border: 1px solid black;
+    position: relative;
+    left: 700px;
+} */
