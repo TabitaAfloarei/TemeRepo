@@ -1,0 +1,73 @@
+body{
+    height: 100vh; /* ca si inaltimea containerului sa fie cat pagina 
+                    si patratul cu dots sa fie pe centru si vertical,
+                    nu doar orizontal*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 500px;
+    height: 350px;
+    background-color: rgb(65, 64, 64);
+    /*position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.dots{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(117, 224, 185);
+    border-radius: 50%; 
+}
+
+.container:hover .one,
+.container:hover .two,
+.container:hover .three{
+    animation-play-state: running;
+}
+
+.dots.one,
+.dots.two,
+.dots.three{
+    position: relative;
+
+    animation-name: bounce;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    
+}
+
+.dots.two{
+    animation-delay: 150ms;
+}
+
+.dots.three{
+    animation-delay: 300ms;
+}
+
+@keyframes bounce{
+    0%{
+        top: 0px;
+        animation-timing-function: ease-in-out;
+    }
+
+    75%{
+        top: -15px;
+        animation-timing-function: ease-in-out;
+    }
+
+    100%{
+        top: 0px;
+        animation-timing-function: ease-in-out;
+    }
+}
